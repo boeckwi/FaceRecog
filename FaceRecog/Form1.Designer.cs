@@ -34,6 +34,7 @@
             this.CBmax = new System.Windows.Forms.TextBox();
             this.CRmin = new System.Windows.Forms.TextBox();
             this.CRmax = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,9 +42,9 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(31, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -58,15 +59,15 @@
             // 
             // CBmin
             // 
-            this.CBmin.Location = new System.Drawing.Point(236, 14);
+            this.CBmin.Location = new System.Drawing.Point(167, 14);
             this.CBmin.Name = "CBmin";
             this.CBmin.Size = new System.Drawing.Size(48, 20);
             this.CBmin.TabIndex = 2;
-            this.CBmin.Text = "80";
+            this.CBmin.Text = "103";
             // 
             // CBmax
             // 
-            this.CBmax.Location = new System.Drawing.Point(290, 14);
+            this.CBmax.Location = new System.Drawing.Point(221, 14);
             this.CBmax.Name = "CBmax";
             this.CBmax.Size = new System.Drawing.Size(48, 20);
             this.CBmax.TabIndex = 3;
@@ -74,25 +75,36 @@
             // 
             // CRmin
             // 
-            this.CRmin.Location = new System.Drawing.Point(93, 14);
+            this.CRmin.Location = new System.Drawing.Point(49, 15);
             this.CRmin.Name = "CRmin";
             this.CRmin.Size = new System.Drawing.Size(48, 20);
             this.CRmin.TabIndex = 4;
-            this.CRmin.Text = "140";
+            this.CRmin.Text = "142";
             // 
             // CRmax
             // 
-            this.CRmax.Location = new System.Drawing.Point(147, 14);
+            this.CRmax.Location = new System.Drawing.Point(103, 15);
             this.CRmax.Name = "CRmax";
             this.CRmax.Size = new System.Drawing.Size(48, 20);
             this.CRmax.TabIndex = 5;
             this.CRmax.Text = "170";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(302, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(39, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 425);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.CRmax);
             this.Controls.Add(this.CRmin);
             this.Controls.Add(this.CBmax);
@@ -115,6 +127,7 @@
         private System.Windows.Forms.TextBox CBmax;
         private System.Windows.Forms.TextBox CRmin;
         private System.Windows.Forms.TextBox CRmax;
+        private System.Windows.Forms.Button button2;
     }
 }
 
