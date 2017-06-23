@@ -85,7 +85,7 @@ namespace FaceRecog
             var result = s.AnalysePixel(input, p.X, p.Y);
             var cr = result.Item1;
             var cb = result.Item2;
-            MessageBox.Show($"cr:{cr} cb:{cb}");
+            MessageBox.Show(String.Format("cr:{0} cb:{1}", cr, cb));
         }
 
         void button2_Click(object sender, EventArgs e)
