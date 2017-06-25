@@ -6,7 +6,7 @@ namespace FaceRecog
 {
     public delegate void PixelAnalyzed(int x, int y, byte yd, byte cr, byte cb);
 
-    class SkinScanner
+    public class SkinScanner
     {
         public void Analyse(Bitmap bmp, PixelAnalyzed callback)
         {

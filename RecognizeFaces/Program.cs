@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FaceRecog;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,6 +22,10 @@ namespace RecognizeFaces
         void Start(string[] args)
         {
             ParseArgs(args);
+
+            var a = new Algorithm(in_file.FullName);
+            var result = a.Process();
+            result.Save(out_file.FullName);
         }
 
         void ParseArgs(string[] args)

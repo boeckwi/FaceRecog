@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecog", "FaceRecog\FaceRecog.csproj", "{8360683D-1A79-4B01-90CE-3D72FC40BF4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeFaces", "RecognizeFaces\RecognizeFaces.csproj", "{F6BB802F-3B18-4067-90C6-9DAF4DDF9ABE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeFaces", "RecognizeFaces\RecognizeFaces.csproj", "{E5E519D5-C99F-4819-B481-93B684C85A7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8360683D-1A79-4B01-90CE-3D72FC40BF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8360683D-1A79-4B01-90CE-3D72FC40BF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8360683D-1A79-4B01-90CE-3D72FC40BF4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6BB802F-3B18-4067-90C6-9DAF4DDF9ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6BB802F-3B18-4067-90C6-9DAF4DDF9ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6BB802F-3B18-4067-90C6-9DAF4DDF9ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6BB802F-3B18-4067-90C6-9DAF4DDF9ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E519D5-C99F-4819-B481-93B684C85A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E519D5-C99F-4819-B481-93B684C85A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E519D5-C99F-4819-B481-93B684C85A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E519D5-C99F-4819-B481-93B684C85A7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
