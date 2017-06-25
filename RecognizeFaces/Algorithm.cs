@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 
 namespace FaceRecog
@@ -24,7 +25,9 @@ namespace FaceRecog
 
         public Bitmap Process()
         {
-            input = new Bitmap(input_path);
+            var source = new Bitmap(input_path);
+            input = new Bitmap(source.Width, source.Height, PixelFormat.Format24bppRgb);
+            Graphics.FromImage(input).DrawImage(source, 0, 0, input.Width, input.Height);
             output = new Bitmap(input);
 
             Step1();
@@ -74,7 +77,9 @@ namespace FaceRecog
         List<Point>[] RemoveSmallSegments(IEnumerable<List<Point>> segments)
         {
             var segmentsWithAreas = segments.Select(s => new {s, area = AreaOf(s)}).ToArray();
-            var averageArea = segmentsWithAreas.Average(s => s.area);
+            if (!segmentsWithAreas.Any()) return segments.ToArray();
+            var biggestThird = segmentsWithAreas.OrderByDescending(s => s.area).Take(segments.Count() / 3 + 1);
+            var averageArea = biggestThird.Average(s => s.area);
             var result = segmentsWithAreas.Where(s => s.area >= averageArea).Select(s => s.s).ToArray();
             return result;
         }
